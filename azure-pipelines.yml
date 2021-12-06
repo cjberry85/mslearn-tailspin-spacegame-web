@@ -9,7 +9,7 @@ trigger:
 pool:
   name: 'default'
   demands:
-  -npm
+  - npm
 
 variables:
   buildConfiguration: 'Release'
@@ -20,6 +20,7 @@ steps:
   inputs:
     packageType: sdk
     version: '5.x'
+
 - task: Npm@1
   displayName: 'Run npm install'
   inputs:
