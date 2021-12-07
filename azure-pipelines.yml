@@ -16,9 +16,10 @@ variables:
 
 steps:
 - task: UseDotNet@2
-  displayName: ‘Use .NET SDK $(dotnetSdkVersion)’
+  displayName: ‘Use .NET SDK 5.x'
   inputs:
-    version: ‘$(dotnetSdkVersion)’
+    packageType: sdk
+    version: '5.x'
     
 - task: NodeTool@0
   inputs:
